@@ -1,0 +1,159 @@
+﻿<Window x:Class="DecoratorPatternTask.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DecoratorPatternTask"
+        mc:Ignorable="d"
+        Title="Decorator" Height="450" Width="800">
+    <Grid Background="MediumPurple">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Button Background="Aqua" Content="SEND" FontWeight="Medium" Foreground="DarkGray" FontSize="30"  Width="200" Height="50" Click="Button_Click"></Button>
+        </Grid>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Image Name="facebookimg" Width="32" Height="32"></Image>
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Label Name="facebooklbl" Content="" Foreground="White" FontWeight="Medium" FontSize="30" Margin="-20,9,0,0"></Label>
+                    </Grid>
+                    
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Image Name="twitterimg" Width="32" Height="32"></Image>
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Label Name="twitterlbl" Content="" Foreground="White" FontWeight="Medium" FontSize="30" Margin="-20,8,0,0"></Label>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Image Name="instagramimg" Width="32" Height="32"></Image>
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Label Name="instagramlbl" Content="" Foreground="White" FontWeight="Medium" FontSize="30" Margin="-20,9,0,0"></Label>
+                    </Grid>
+                </Grid>
+
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="3*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Image Name="telegramimg" Width="32" Height="32"></Image>
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Label Name="telegramlbl" Foreground="White" FontWeight="Medium" FontSize="30" Margin="-20,9,0,0"></Label>
+                    </Grid>
+                </Grid>
+
+            </Grid>
+
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <CheckBox x:Name="facebookcheckbox" FontSize="12" Margin="10,10,0,0" FontWeight="Medium" Foreground="Wheat" Content="Facebook">
+                        <CheckBox.LayoutTransform>
+                            <ScaleTransform ScaleX="3" ScaleY="3">
+                                
+                            </ScaleTransform>
+                        </CheckBox.LayoutTransform>
+                    </CheckBox>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <CheckBox Name="twittercheckbox" FontSize="12" Margin="10,10,0,0" FontWeight="Medium" Foreground="Wheat" Content="Twitter">
+                        <CheckBox.LayoutTransform>
+                            <ScaleTransform ScaleX="3" ScaleY="3">
+
+                            </ScaleTransform>
+                        </CheckBox.LayoutTransform>
+                    </CheckBox>
+                </Grid>
+
+                <Grid Grid.Row="2">
+                    <CheckBox Name="instagramcheckbox" FontSize="12" Margin="10,10,0,0" FontWeight="Medium" Foreground="Wheat" Content="Instagram">
+                        <CheckBox.LayoutTransform>
+                            <ScaleTransform ScaleX="3" ScaleY="3">
+
+                            </ScaleTransform>
+                        </CheckBox.LayoutTransform>
+                    </CheckBox>
+                </Grid>
+
+                <Grid Grid.Row="3">
+                    <CheckBox Name="telegramcheckbox" FontSize="12" Margin="10,10,0,0" FontWeight="Medium" Foreground="Wheat" Content="Telegram">
+                        <CheckBox.LayoutTransform>
+                            <ScaleTransform ScaleX="3" ScaleY="3">
+
+                            </ScaleTransform>
+                        </CheckBox.LayoutTransform>
+                    </CheckBox>
+                </Grid>
+
+
+            </Grid>
+            
+        </Grid>
+        
+        
+        
+        
+        
+        
+        
+    </Grid>
+</Window>
